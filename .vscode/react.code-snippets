@@ -1,0 +1,34 @@
+{
+  "React Functional Component": {
+    "scope": "typescriptreact",
+    "prefix": "rfct",
+    "body": [
+      "import { FC } from 'react'",
+      "",
+      "const ${1:$TM_FILENAME_BASE}: FC = () => {",
+      "  return <>$2</>",
+      "}",
+      "",
+      "export default ${1:$TM_FILENAME_BASE};"
+    ],
+    "description": "React.FC component in TypeScript"
+  },
+  "React Functional Component with Props": {
+    "scope": "typescriptreact",
+    "prefix": "rfcpt",
+    "body": [
+      "import { FC } from 'react'",
+      "",
+      "type ${1:$TM_FILENAME_BASE}Props = {",
+      "  $2",
+      "}",
+      "",
+      "const ${1:$TM_FILENAME_BASE}: FC<${1:$TM_FILENAME_BASE}Props> = (props) => {",
+      "  return <>$3</>",
+      "}",
+      "",
+      "export default ${1:$TM_FILENAME_BASE};"
+    ],
+    "description": "React.FC component with Props in TypeScript"
+  }
+}

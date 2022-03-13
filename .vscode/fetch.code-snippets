@@ -1,0 +1,28 @@
+{
+  "Fetch Request": {
+    "scope": "javascript,typescript",
+    "prefix": "fetch",
+    "body": [
+      "fetch(\"$1\")",
+      "	.then(response => response.json())",
+      "	.then(data => $2)",
+      "	.catch(error => console.error(error));"
+    ],
+    "description": "Fetch request"
+  },
+
+  "Fetch Request POST": {
+    "scope": "javascript,typescript",
+    "prefix": "fetch-post",
+    "body": [
+      "fetch(\"$1\", {",
+      "	method: \"POST\",",
+      "	body: JSON.stringify($2)",
+      "})",
+      "	.then(response => response.json())",
+      "	.then(data => $3)",
+      "	.catch(error => console.error(error));"
+    ],
+    "description": "Fetch POST request"
+  }
+}
